@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block content %}
+<body>
+    <h1 class="content_title">predict</h1>
+    <div class="content">
+        <h1>Enter a word!</h1>
+      <div class="submit">
+          <form action="/predict" method="POST">
+            <input type="text" name="name">
+            <input type="submit" value='submit'>
+          </form>
+      </div>
+    </div>
+    <ul id="polaroids">
+        
+          <li><a href="static\images\メンズドロップショルダーレターとファイヤーTシャツ.jpg"><img src="static\images\メンズドロップショルダーレターとファイヤーTシャツ.jpg" alt="白熊の写真"></a></li>
+        
+          <li><a href="static\images\男性 コットン ドロップショルダー 無地柄 シャツ.jpg"><img src="static\images\男性 コットン ドロップショルダー 無地柄 シャツ.jpg" alt="鹿の写真"></a></li>
+        
+          <li><a href="static\images\メンズ刺繍柄Tシャツ.jpg"><img src="static\images\メンズ刺繍柄Tシャツ.jpg" alt="ペンギンの写真"></a></li>
+        
+          <li><a href="static\images\男性 カラフルストライブ ドロップショルダーTシャツ.jpg"><img src="static\images\男性 カラフルストライブ ドロップショルダーTシャツ.jpg" alt="麒麟の写真"></a></li>
+        
+          <li><a href="static\images\男性 ドロップショルダー カーブヘム ソリッド シャツ.jpg"><img src="static\images\男性 ドロップショルダー カーブヘム ソリッド シャツ.jpg" alt="山羊の写真"></a></li>
+        
+          <li><a href="static\images\男性 オートバイ＆スローガングラフィック Tシャツ.jpg"><img src="static\images\男性 オートバイ＆スローガングラフィック Tシャツ.jpg" alt="虎の写真"></a></li>
+        
+        </ul>
+    
+      
+</body>
+{% endblock %}

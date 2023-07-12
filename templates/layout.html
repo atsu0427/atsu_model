@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+    <title>my style</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href='/'>our style</a>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/predict">PREDICT</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    {% block content %}
+     
+    {% endblock %}
+    <footer>
+        <div class="footer_logo">©︎ atsu.model</div>
+    </footer>
+</body>
+
+</html>
